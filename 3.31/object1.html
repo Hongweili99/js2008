@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var F = function(){};
+        var f = new F();
+        Object.getPrototypeOf(f) === F.prototype    //true
+
+        //空对象的原型 Object.prototype
+        Object.getPrototypeOf({}) === Object.prototype  //true
+
+        //Object.prototype 的原型是 null
+        Object.getPrototypeOf(Object.prototype) === null    //true
+
+        //函数的原型是 Function.prototype
+        function f() {}
+        Object.getPrototypeOf(f) === Function.prototype)    //false
+
+    </script>
+</body>
+</html>
