@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script src="../jquery-3.5.1.min.js"></script>
+<script>
+    const p = new Promise(function (resolve,reject){
+        $.ajax({
+            url:'http://vue.api.comcto.com/api/password1.php',
+            type:'get',
+            success:function (data){
+                console.log('第一位密碼',data)
+                resolve(data)
+            }
+        })
+    }).then(function (d){
+        console.log('接收上一步 resolve傳遞的數據')
+        console.log(d)
+
+        $.ajax({
+            url:'http://vue.api.comcto.com/api/password2.php',
+            type:'get',
+            success:function (data){
+                console.log('第二位密碼',data)
+            }
+        })
+
+    }).then(function (d){
+        $.ajax({
+            url:'http://vue.api.comcto.com/api/password3.php',
+            type:'get',
+            success:function (data){
+                console.log('第三位密碼',data)
+            }
+        })
+    })
+</script>

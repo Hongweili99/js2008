@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script src="../jquery-3.5.1.min.js"></script>
+<script>
+    $.ajax({
+        url:'http://vue.api.comcto.com/api/password1.php', //要請求的接口地址
+        type:'get', //請求方法 get post
+        // dataType:'json',
+        success:function (d){ //請求成功之後的 處理函數
+            console.log('第一位密碼')
+            console.log(d)
+        }
+    })
+</script>
+<script>
+    $.ajax({
+        url:'http://vue.api.comcto.com/api/password2.php', //要請求的接口地址
+        type:'get', //請求方法 get post
+        // dataType:'json',
+        success:function (d){ //請求成功之後的 處理函數
+            console.log('第二位密碼')
+            console.log(d)
+        }
+    })
+</script>
+<script>
+    $.ajax({
+        url:'http://vue.api.comcto.com/api/password3.php', //要請求的接口地址
+        type:'get', //請求方法 get post
+        // dataType:'json',
+        success:function (d){ //請求成功之後的 處理函數
+            console.log('第三位密碼')
+            console.log(d)
+        }
+    })
+</script>
+<script>
+    $.ajax({
+        url:'http://vue.api.comcto.com/api/password4.php', //要請求的接口地址
+        type:'get', //請求方法 get post
+        // dataType:'json',
+        success:function (d){ //請求成功之後的 處理函數
+            console.log('第四位密碼')
+            console.log(d)
+        }
+    })
+</script>

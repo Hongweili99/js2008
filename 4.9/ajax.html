@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let xhr = new XMLHttpRequest()
+    xhr.onreadystatechange = function (){
+        if (xhr.readyState==4 && xhr.status==200){
+            let data_str = xhr.responseText
+            console.log(data_str)
+            console.log(typeof data_str)
+        }
+    }
+    xhr.open("get","http://vue.api.comcto.com/api/password1.php")
+    xhr.send()
+</script>
