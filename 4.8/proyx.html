@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    const obj1 = {
+        name:'lihongwei',
+        age:11
+    }
+      Object.defineProperty(obj1,'email',{
+        // value:'135663134542@qq.com',
+        // configurable:true,
+        // enumerable:true,
+        // writable:true,
+        get (){
+            return '訪問了name屬性'
+        },
+        set (v){
+            // return `name的新值$(v)`
+            return  v
+        }
+    })
+    console.log(obj1)
+</script>

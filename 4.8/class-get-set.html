@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    class A{
+        constructor(name='noname',age=0) {
+            this.name = name
+            this.age = age
+        }
+        get name(){
+            console.log('訪問了name屬性')
+        }
+        // set name(v){
+        //     console.log()
+        // }
+    }
+    const p1 = new A('lihongwei',18);
+    const p2 = new A('ranran',18);
+    const p3 = new A();
+    console.log(p1)
+    console.log(p2)
+    console.log(p3)
+
+    p1.name()
+</script>
