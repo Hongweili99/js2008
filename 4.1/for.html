@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button class="btn">AAA</button>
+    <button class="btn">BBB</button>
+    <button class="btn">CCC</button>
+    <button class="btn">DDD</button>
+    <button class="btn">EEE</button>
+</body>
+</html>
+<script>
+    window.onload = function (){
+        var btn = document.getElementsByClassName('btn')
+        for(var i=0;i<btn.length;i++){
+            btn[i].index = i;
+            btn[i].onclick = function (){
+                console.log(this.index);
+            }
+        }
+    }
+</script>
