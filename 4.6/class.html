@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function person1(){
+
+        }
+
+        person1.prototype.name = 'noname'
+        person1.prototype.sex = '男'
+        person1.prototype.age = 0
+        person1.prototype.say = function (){
+            console.log('hello')
+        }
+
+        var p1 = new person1()
+        console.log(p1.name)
+        console.log(p1.sex)
+        console.log(p1.age)
+        p1.say()
+
+
+
+        // class person2 {
+        //
+        // }
+        // let p2 = new person2()
+        // let p3 = new person2()
+        // console.log(p1)        console.log(p1.name)
+
+        // console.log(p2)
+        // console.log(p3)
+    </script>
+</body>
+</html>
