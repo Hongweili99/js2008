@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <button>點擊1</button>
+        <button v-on:click='hello'>點擊2</button>
+    </div>
+</body>
+</html>
+<script src="../vue.js"></script>
+<script>
+    new Vue({
+        el:'#app',
+        methods:{
+            hello(){
+                alert('Hello')
+            }
+        }
+    })
+</script>
+<script>
+    /*
+    document.querySelector('button').onclick = function(){
+        alert(000);
+    } 
+    */
+    /*
+    document.getElementsByTagName('button')[0].addEventListener('click',function(){
+        alert(1)
+    })
+    */
+</script>
